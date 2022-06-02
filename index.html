@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Color Scheme Generator</title>
+</head>
+
+<body>
+    <header class="site-title">
+        <h1 class="site-title-main">Color Scheme Generator</h1>
+    </header>
+    <main class="main">
+        <section class="section-form">
+            <div class="container">
+                <form class="form-select form-flex">
+                    <div class="input-flex">
+                        <input type="color" class="seed-color" id="color-input-el" value="#4D0505">
+                        <select name="color-scheme" id="select-scheme-type-el" class="select-scheme-type">
+                            <option value="monochrome" class="opt-scheme-type">Monochrome</option>
+                            <option value="monochrome-dark" class="opt-scheme-type">Monochrome-dark</option>
+                            <option value="monochrome-light" class="opt-scheme-type">Monochrome-light</option>
+                            <option value="analogic" class="opt-scheme-type">Analogic</option>
+                            <option value="complement" class="opt-scheme-type">Complement</option>
+                            <option value="analogic-complement" class="opt-scheme-type">Analogic-complement</option>
+                            <option value="triad" class="opt-scheme-type">Triad</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit" id="submit-btn">Get color scheme</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section-color-scheme">
+            <div class="container container-grid" id="container-el">
+                <!-- <div class="color-container">
+                    <div class="color"></div>
+                    <div class="tooltip">
+                        <span class="tooltiptext" id="tooltiptext-el">Copy</span>
+                        <input class="color-value" id="color-value-el" type="text" readonly>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    </main>
+
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
