@@ -58,7 +58,8 @@ img {
     margin: 0 auto;
     text-align: center;
     font-size: var(--fs-h1);
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom: 3rem;
 }
 
 .main {
@@ -152,6 +153,10 @@ img {
 }
 
 @media (min-width: 415px) {
+    .site-title {
+        margin-bottom: 0;
+    }
+
     .btn-submit {
         margin-bottom: 0;
     }
